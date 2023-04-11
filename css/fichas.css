@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    margin-top: 0;
+    background-color: black ;
+    overflow-x: hidden;
+    border: solid 2px red;
+}
+
+.conteudo{
+    width: 100%;
+    height: 848px;
+    border: solid 2px red; 
+}
+
+.cabecalho{
+    background-color: black ;
+    width: 99,7%;
+    height: 80px;
+    border-radius: 15px; 
+    border: solid 3px red;
+    color: red;
+    padding-top: 20px;
+    padding-left: 80px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header img{
+    margin-top: -20px;
+    width: 200px;
+    margin-right: 60px;
+}
+
+#ficha{
+    background-color: black;
+    width: 850px;
+    height: 800px;
+    margin-left: 50px;
+    margin-top: 25px;;
+    border: solid 2px red; 
+    border-radius: 15px;
+    float: left;
+    color: white;
+   
+
+}
+
+#ficha h2{
+    color: white;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#colorPicker{
+
+}
+
+#ficha h3{
+    margin-top: 40;
+    margin-left: 60px;
+    float: left;
+
+}
+
+.fichaform{
+    margin-top: 50px;
+}
+
+
+label{
+    color: white;
+    margin-left: 100px;
+}

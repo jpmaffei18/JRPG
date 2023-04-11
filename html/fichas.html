@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/fichas.css" rel="stylesheet">
+    <title> HOME </title>
+</head>
+<body>
+    <header class="cabecalho">
+       <img src="../imagens/JRPG LOGO.png">
+    </header>
+
+    <div class="conteudo">
+
+        <div id="ficha">
+            <h2>--------------------------FICHA-------------------------</h2>
+            <h3> Nome: </h3>
+            <h3> Classe: </h3>
+            <h3> Raça:  </h3>
+        </div>
+
+    <form class="fichaform">
+        <label>Escolher cor:</label>
+        <input type="color" id="colorPicker">
+
+    </form>
+
+        
+
+    </div>
+
+    <script>
+// seleciona a div pelo ID
+const div = document.getElementById("ficha");
+
+// seleciona o input da palheta de cores pelo ID
+const colorPicker = document.getElementById("colorPicker");
+
+// adiciona um ouvinte de evento ao input da palheta de cores para mudar a cor da div
+colorPicker.addEventListener("input", function() {
+  div.style.backgroundColor = colorPicker.value;
+});
+
+    </script>
+
+</body>
+</html>
