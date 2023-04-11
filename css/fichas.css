@@ -37,7 +37,8 @@ header img{
     width: 850px;
     height: 800px;
     margin-left: 50px;
-    margin-top: 25px;;
+    margin-top: 25px;
+    margin-right: 40px;
     border: solid 2px red; 
     border-radius: 15px;
     float: left;
@@ -66,10 +67,15 @@ header img{
 
 .fichaform{
     margin-top: 50px;
+    color:white;
+}
+
+.fichaform h2{
+  
 }
 
 
 label{
     color: white;
-    margin-left: 100px;
+    margin-left: 60px;
 }
