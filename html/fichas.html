@@ -16,15 +16,54 @@
 
         <div id="ficha">
             <h2>--------------------------FICHA-------------------------</h2>
-            <h3> Nome: </h3>
-            <h3> Classe: </h3>
-            <h3> Raça:  </h3>
+            <table>
+                <tr>
+                    <td>Nome</td> 
+                    <td>Raça</td>
+                    <td>Classe</td>
+                </tr>
+
+            </table>
+            <div class="imagem"> </div>
         </div>
 
     <form class="fichaform">
         <h2>Ficha Padrão</h2>
-        <label>Escolher cor:</label>
-        <input type="color" id="colorPicker">
+
+        <div class="mudarcor">
+            <label>Escolher cor do fundo:</label>
+            <input type="color" id="colorPicker">
+            <br/>
+    
+            <label>Escolher cor da borda:</label>
+            <input type="color" id="colorPickerborder">
+            <br/>
+    
+            <label>Escolher cor da fonte:</label>
+            <input type="color" id="colorPickerfont">
+    
+            </div>
+    
+
+        <label>Nome: </label>
+        <input type="text" id="name" name="usuario">
+        <br/>
+
+       
+        
+        <label>Raça: </label>
+        <input type="text" id="raca" name="raca">
+        <br/>
+
+        <label>Classe: </label>
+        <input type="text" id="classe" name="classe">
+        
+
+
+
+
+
+
 
     </form>
 
@@ -43,6 +82,26 @@ const colorPicker = document.getElementById("colorPicker");
 colorPicker.addEventListener("input", function() {
   div.style.backgroundColor = colorPicker.value;
 });
+
+// seleciona o input da palheta de cores pelo ID
+const colorPickerborder = document.getElementById("colorPickerborder");
+
+// adiciona um ouvinte de evento ao input da palheta de cores para mudar a cor da div
+colorPickerborder.addEventListener("input", function() {
+  div.style.borderColor = colorPickerborder.value;
+});
+
+// seleciona o input da palheta de cores pelo ID
+const colorPickerfont = document.getElementById("colorPickerfont");
+
+const texto = document.querySelector("tr");
+
+// adiciona um ouvinte de evento ao input da palheta de cores para mudar a cor da div
+colorPickerfont.addEventListener("input", () => {
+  texto.style.color = colorPickerfont.value;
+});
+
+
 
     </script>
 

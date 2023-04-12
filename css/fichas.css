@@ -54,16 +54,44 @@ header img{
     text-align: center;
 }
 
-#colorPicker{
 
+.mudarcor{
+    float: right;
+    margin-right: 300px;
+    margin-top: 0;
 }
 
-#ficha h3{
-    margin-top: 40;
-    margin-left: 60px;
+
+
+#ficha table{
+    margin-top: 40px;
     float: left;
-
 }
+
+#ficha td{
+    margin-left: 110px;
+    float: left;
+    font-size: 20px;
+}
+
+.imagem{
+   width: 200px;
+   height: 200px;
+   border: solid 2px red;
+   float: right;
+   margin-right: 30px; 
+}
+
+#name{
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
+#raca {
+    margin-left: 12px;
+    margin-bottom: 7px;
+}
+
 
 .fichaform{
     margin-top: 50px;
